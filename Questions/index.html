@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card Generator</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        #user-container {
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        #user-container img { border-radius: 50%; }
+        button { padding: 10px 15px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Random User Generator</h1>
+    <button id="fetch-button">Fetch New User</button>
+
+    <div id="user-container">
+        <p>Click the button to fetch a user!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
