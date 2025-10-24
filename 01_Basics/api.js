@@ -1,7 +1,7 @@
 async function fetchUserdata(userId) {
   const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`;
   try {
-    console.log(`Fetching userId: ${userId} from ${apiUrl}`);
+    // console.log(`Fetching userId: ${userId} from ${apiUrl}`);
     const response = await fetch(apiUrl);
     if (response.ok) {
       const userData = await response.json();
@@ -15,4 +15,9 @@ async function fetchUserdata(userId) {
     console.error('Fetch error:', error);
     return null;
   }
+}
+
+// Example usage:\
+for(let i = 1; i <= 2; i++) {
+  fetchUserdata(i);
 }
