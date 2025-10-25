@@ -1,3 +1,4 @@
+
 async function fetchUserdata(userId) {
   const apiUrl = `https://jsonplaceholder.typicode.com/users/${userId}`;
   try {
